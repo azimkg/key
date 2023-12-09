@@ -8,7 +8,6 @@ import Container from '../container/Container';
 import TooltipContent from '../tooltip/Tooltip';
 import BadResult from './BadResult';
 import ProgressInfo from './ProgressInfo';
-import ProgressResult from './ProgressResult';
 import cls from './resultLesson.module.css';
 import SuccessResult from './SuccessResult';
 
