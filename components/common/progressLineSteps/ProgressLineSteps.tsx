@@ -10,7 +10,7 @@ interface IProgressLineStepsProps {
   className?: string
 }
 
-const ProgressLineSteps: FC<IProgressLineStepsProps> = ({ progress, numSegments = 8, className }) => {
+const ProgressLineSteps: FC<IProgressLineStepsProps> = ({ progress = 0, numSegments = 8, className }) => {
 
   return (
     <div className={classes(cls.progress_list, className ?? '')} >

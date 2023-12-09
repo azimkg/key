@@ -1,5 +1,5 @@
 'use client';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import classes from 'classnames';
 import Keyboard from 'common/keyboard/Keyboard';
 import SmallContainer from 'common/smallContainer/SmallContainer';
@@ -92,7 +92,7 @@ const ExerciseLetterFall = () => {
               cls.line,
             )}
           >
-            <p ref={coding.length - currentIndex - 1 === idx ? anchor : null} onClick={() => getCoordinate(item)} style={{ '--tranlate-x': `${getCoordinate(item)}px` }}>
+            <p ref={coding.length - currentIndex - 1 === idx ? anchor : null} onClick={() => getCoordinate(item)} style={{ '--tranlate-x': `${getCoordinate(item)}px` } as React.CSSProperties}>
               {item}
             </p>
             <div className={classes(
